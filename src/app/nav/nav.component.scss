@@ -1,65 +1,96 @@
 @import "../variables";
 
-nav{
-    background-color: $lightenColor;
-    transition: all 0.5s;
-    min-width: 100vw;
-    position: fixed;
-    .menu-container{
-        width: 80%;
-        height: 10vh;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .responsive-menu{display: none;}
-        .menu{
-            width: 50%;
-            display: flex;
-            justify-content: space-around;
-            li{
-                cursor: pointer;
-                a{
-                    font-weight: 300;
-                    font-size: 18px;
-                    color: $darkColor;
-                }
-            }
-        }
-        mat-slide-toggle{
-            font-family: 'Mulish';
-        }
-        
+nav {
+  background-color: $lightenColor;
+  transition: all 0.5s;
+  min-width: 100vw;
+  position: fixed;
+
+  .menu-container {
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .responsive-menu {
+      display: none;
     }
+
+    .menu {
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        position: relative;
+        cursor: pointer;
+
+        a {
+          font-weight: 300;
+          font-size: 18px;
+          color: $darkColor;
+        }
+
+        &:before {
+          position: absolute;
+          background-color: $primaryColor;
+          content: "";
+          display: block;
+          bottom: 0;
+          width: 100%;
+          height: 2px;
+          transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+          transform: scale(0);
+        }
+        &:hover:before {
+            color: #fff;
+            transform: scale(1);
+          }
+      }
+    }
+
+    mat-slide-toggle {
+      font-family: 'Mulish';
+    }
+
+  }
 }
 
 @media screen and (max-width:870px) {
-    nav{
-        bottom: 0;
-        
-        box-shadow: 0px -11px 18px -10px #4555;
-        .menu-container{
-            .menu{
-                display: none;
+  nav {
+    bottom: 0;
+
+    box-shadow: 0px -11px 18px -10px #4555;
+
+    .menu-container {
+      .menu {
+        display: none;
+      }
+
+      .responsive-menu {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+
+        li {
+          height: 100%;
+
+          a {
+            i {
+              transition: all 0.5s;  
+              font-size: 36px;
+              color: $primaryColor;
+              cursor: pointer;
+              &:hover{
+                transform: scale(0.8);
+              }
             }
-            .responsive-menu{
-                display: flex;
-                width: 100%;
-                justify-content: space-around;
-                li{
-                    height: 100%;
-                    a{
-                        i{
-                            font-size: 36px;
-                            color: $primaryColor;
-                        }
-                        &:hover{
-                            background-color: #4555;
-                        }
-                    }
-                }
-            }
+          }
         }
+      }
     }
+  }
 
 }
