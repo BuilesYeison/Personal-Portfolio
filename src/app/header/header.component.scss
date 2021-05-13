@@ -41,3 +41,25 @@ header{
         }
     }
 }
+@media screen and (max-width:1016px) {
+    header{
+        .header-content{
+            img{
+                display: none;
+            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .info-container{
+                
+                .title{
+                    font-size: 36px;
+                    .colored{
+                        //border: 1px solid black;
+                        line-height: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+}
