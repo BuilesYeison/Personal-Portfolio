@@ -1,10 +1,10 @@
-<nav id="nav">
+<nav [style.backgroundColor]= "backgroundColor" id="nav">
     <div class="menu-container">
         <ul class="menu">
-            <li><a>Home</a></li>
-            <li><a>About me</a></li>
-            <li><a>Portfolio</a></li>
-            <li><a>Contact me</a></li>
+            <li><a [style.color]="textColor">Home</a></li>
+            <li><a [style.color]="textColor">About me</a></li>
+            <li><a [style.color]="textColor">Portfolio</a></li>
+            <li><a [style.color]="textColor">Contact me</a></li>
         </ul>
         <ul class="responsive-menu">
             <li><a><i class='bx bxs-home' ></i></a></li>

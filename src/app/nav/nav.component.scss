@@ -2,6 +2,7 @@
 
 nav{
     background-color: $lightenColor;
+    transition: all 0.5s;
     min-width: 100vw;
     position: fixed;
     .menu-container{

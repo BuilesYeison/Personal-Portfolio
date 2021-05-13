@@ -2,5 +2,10 @@ mat-slide-toggle{
     position: fixed;
     z-index: 999;
     right: 200px;
-    top: 20px;
+    top: 25px;
+}
+@media screen and (max-width:800px) {
+    mat-slide-toggle{
+        right: 50px;
+    }
 }

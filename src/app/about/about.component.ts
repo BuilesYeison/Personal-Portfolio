@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
+import {DarkmodeService} from '../darkmode.service'
 
 @Component({
   selector: 'app-about',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-
-  constructor() { }
+  textColor:string;
+  backgroundColor:string;
+  constructor(private darkmode:DarkmodeService) { }
 
   ngOnInit(): void {
   }
-
+  ngOnChanges():void{
+    
+  }
 }
