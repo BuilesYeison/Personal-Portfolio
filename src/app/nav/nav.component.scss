@@ -2,7 +2,7 @@
 
 nav{
     background-color: $lightenColor;
-    width: 100vw;
+    min-width: 100vw;
     position: fixed;
     .menu-container{
         width: 80%;
@@ -11,6 +11,7 @@ nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        .responsive-menu{display: none;}
         .menu{
             width: 50%;
             display: flex;
@@ -29,4 +30,35 @@ nav{
         }
         
     }
+}
+
+@media screen and (max-width:870px) {
+    nav{
+        bottom: 0;
+        
+        box-shadow: 0px -11px 18px -10px #4555;
+        .menu-container{
+            .menu{
+                display: none;
+            }
+            .responsive-menu{
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+                li{
+                    height: 100%;
+                    a{
+                        i{
+                            font-size: 36px;
+                            color: $primaryColor;
+                        }
+                        &:hover{
+                            background-color: #4555;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
