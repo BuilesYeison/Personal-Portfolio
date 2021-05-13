@@ -1,3 +1,4 @@
-<mat-slide-toggle [checked]="isDarkMode" (change)="getToggle($event)" [style.color]="textColor" color="primary">{{modeSelected}}</mat-slide-toggle>
+<mat-slide-toggle [checked]="isDarkMode" (change)="getToggle($event)" [style.backgroundColor]="backgroundColor" [style.color]="textColor" color="primary">{{modeSelected}}</mat-slide-toggle>
 <app-nav [isDarkMode]="isDarkMode"></app-nav>
 <app-header [isDarkMode]="isDarkMode"></app-header>
+<app-about></app-about>

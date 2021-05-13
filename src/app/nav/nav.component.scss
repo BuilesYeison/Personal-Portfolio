@@ -5,6 +5,7 @@ nav {
   transition: all 0.5s;
   min-width: 100vw;
   position: fixed;
+  z-index: 1;
 
   .menu-container {
     width: 80%;

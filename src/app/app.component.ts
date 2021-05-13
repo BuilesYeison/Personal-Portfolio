@@ -12,6 +12,7 @@ export class AppComponent {
   title = 'Portfolio';
   isDarkMode :boolean = false
   textColor:string;
+  backgroundColor:string;
   modeSelected:string = "Dark mode" //will show in toggle html element text
   constructor(private darkMode:DarkmodeService){}
   
@@ -19,6 +20,7 @@ export class AppComponent {
     this.isDarkMode = evt.checked;
     const styles = this.darkMode.getMode(this.isDarkMode);
     this.textColor = styles.textColor;
+    this.backgroundColor = styles.backgroundColor
     this.modeSelected = this.isDarkMode === true ? "Ligth mode":"Dark mode"
   }
 

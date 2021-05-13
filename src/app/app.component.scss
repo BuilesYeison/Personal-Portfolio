@@ -1,8 +1,13 @@
+@import './variables';
 mat-slide-toggle{
     position: fixed;
-    z-index: 999;
+    z-index: 2;
     right: 200px;
     top: 25px;
+    background-color: $lightenColor;
+    border-radius: 5px;
+    padding: 0 15px;
+    transition: all 0.5s;
 }
 @media screen and (max-width:800px) {
     mat-slide-toggle{
