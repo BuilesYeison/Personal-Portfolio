@@ -1,0 +1,43 @@
+@import "../variables";
+header{
+    width: 100vw;
+    height: 100vh;
+    background-color: $lightenColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $darkColor;
+    .header-content{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .info-container{
+            p{
+                font-size: 18px;
+                font-weight: 400;
+            }
+           .title{
+               font-size: 48px;
+               font-weight: 700;
+               .colored{
+                color: $primaryColor;
+               }
+           }
+           .social-media{
+               a{
+                i{
+                    color:$primaryColor;
+                    margin-right:1rem;
+                    font-size: 28px;
+                    transition: all 0.2s;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+                
+               }
+           }
+        }
+    }
+}

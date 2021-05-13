@@ -50,5 +50,8 @@ a{
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: 'Mulish', sans-serif; line-height: 1;}
+html, body { height: 100%;  }
+body {padding: 0; margin: 0; line-height: 1; }
+*,h1,h2,h3,h4,h5,span,a,p{
+  font-family: 'Mulish', sans-serif;
+}
