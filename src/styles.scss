@@ -51,7 +51,16 @@ a{
     scroll-behavior: smooth;
 }
 html, body { height: 100%;  }
-body {padding: 0; margin: 0; line-height: 1; }
+body {
+  padding: 0; margin: 0; line-height: 1; 
+  &::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: #ccc;
+  }
+}
 *,h1,h2,h3,h4,h5,span,a,p{
   font-family: 'Mulish', sans-serif;
 }
