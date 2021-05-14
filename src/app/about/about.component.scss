@@ -42,3 +42,24 @@
         }
     }
 }
+@media screen and (max-width:970px) {
+    #about{
+        .content{
+            flex-direction: column;
+            justify-content: space-around;
+            .description{
+                width: 100%;
+                margin-bottom: 100px;
+                .title{
+                    font-size: 36px;
+                }
+            }
+            .skills{
+                width: 100%;
+                .title{
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}
