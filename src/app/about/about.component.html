@@ -1,12 +1,22 @@
 <main [style.backgroundColor]= "backgroundColor" id="about">
     <div class="content">
-        <div class="description">
+        <div data-aos="fade-up" data-aos-duration="1800" class="description">
             <p [style.color]="textColor" class="title">About me</p>
             <p [style.color]="textColor" class="about-description">I am a software developer technologist  specialized in web frontend and UI/UX design. I have experience with Angular, CSS preprocessors, responsive design, mobile first, ecmascript 6+ and get data from API services. I am an excellent team worker and team leader.</p>
             <button mat-raised-button color="primary">Resume <i class='bx bxs-download'></i></button>
         </div>
-        <aside>
-            
+        <aside data-aos="zoom-in" data-aos-duration="2000" class="skills">
+            <p [style.color]="textColor" class="title">Skills</p>
+            <div class="grid">
+                <i data-aos="flip-left" data-aos-duration="2000" class='bx bxl-angular' ></i>
+                <i data-aos="flip-left" data-aos-duration="2200" class='bx bxl-javascript' ></i>
+                <i data-aos="flip-left" data-aos-duration="2400" class='bx bxl-sass' ></i>
+                <i data-aos="flip-left" data-aos-duration="2800" class='bx bxl-css3' ></i>
+                <i data-aos="flip-left" data-aos-duration="3000" class='bx bxl-html5' ></i>
+                <i data-aos="flip-left" data-aos-duration="3000" class='bx bxl-bootstrap' ></i>
+                <i data-aos="flip-left" data-aos-duration="3000" class='bx bxl-git' ></i>
+                <i data-aos="flip-left" data-aos-duration="3000" class='bx bxl-figma' ></i>
+            </div>
         </aside>
     </div>
 </main>

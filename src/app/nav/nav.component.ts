@@ -11,7 +11,22 @@ export class NavComponent implements OnInit {
   backgroundColor:string;
   @Input() isDarkMode:boolean; //get the mode selected from app component
   constructor(private darkMode:DarkmodeService) {}
-
+  navigate(element:string):void{
+    switch(element){
+      case 'header':
+        document.getElementById(element)?.scrollIntoView({behavior:"smooth"});
+        break;
+      case 'about':
+        document.getElementById(element)?.scrollIntoView({behavior:"smooth"});
+        break;
+      case 'portfolio':
+        document.getElementById(element)?.scrollIntoView({behavior:"smooth"});
+        break;
+      case 'contact':
+        document.getElementById(element)?.scrollIntoView({behavior:"smooth"});
+        break;
+    }
+  }
   ngOnInit(): void {}
   ngOnChanges():void{
     const styles = this.darkMode.getMode(this.isDarkMode); //get the styles when there is a change in the page

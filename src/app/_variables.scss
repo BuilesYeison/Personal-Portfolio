@@ -11,3 +11,29 @@ $primaryColor:#2E64EF;
     justify-content: center;
     align-items: center;
 }
+%iconsColor{
+    .bxl-angular{
+        color: #CE2525;
+    }
+    .bxl-javascript{
+        color: #FBFF25;
+    }
+    .bxl-sass{
+        color: #F447C4;
+    }
+    .bxl-css3{
+        color: #4599E8;
+    }
+    .bxl-html5{
+        color: #D12C2C;
+    }
+    .bxl-bootstrap{
+        color: #3F60D2;
+    }
+    .bxl-git{
+        color: #E45D11;
+    }
+    .bxl-figma{
+        color: #8E32D7;
+    }
+}
