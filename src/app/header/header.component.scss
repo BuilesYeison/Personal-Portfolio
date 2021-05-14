@@ -20,8 +20,7 @@ header{
                 font-weight: 400;
             }
            .title{
-               font-size: 48px;
-               font-weight: 700;
+               @extend %title;
                .colored{
                 color: $primaryColor;
                }

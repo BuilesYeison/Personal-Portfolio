@@ -1,3 +1,13 @@
 $lightenColor:#F5F5F5;
 $darkColor:#121314;
 $primaryColor:#2E64EF;
+
+%title{
+    font-size: 48px;
+    font-weight: 700;
+}
+%flexCenter{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

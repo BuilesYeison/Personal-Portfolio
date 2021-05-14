@@ -1,6 +1,23 @@
+@import '../variables';
 #about{
     max-width: 100%;
     height: 100vh;
-    overflow: hidden;
     transition:all 0.5s;
+    @extend %flexCenter;
+    .content{
+        width: 80%;
+        margin:0 auto;
+        @extend %flexCenter;
+        .description{
+            width: 45%;
+            .title{
+                @extend %title;
+                margin-bottom: 25px;
+            }
+            .about-description{
+                line-height: 1.5;
+                font-size: 18px;
+            }
+        }
+    }
 }
