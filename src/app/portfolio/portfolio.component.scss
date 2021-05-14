@@ -1,0 +1,46 @@
+@import '../variables';
+#portfolio{
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 0; //el largo es dinamico solo abra espacios arriba y abajo para poner orden
+    transition: all 0.5s;
+    .title{
+        @extend %title;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .grid{
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+        grid-gap: 1em;
+        grid-row-gap: 5em;
+        padding: 25px 0;
+        .example-card {
+            justify-self: center;
+            max-width: 250px;
+            height: 200px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+            background-color: rgb(235, 235, 235);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.5s;
+            &:hover{
+                height: 380px;
+            }
+            .container{
+                mat-card-actions{
+                    button{
+                        transition: all 0.2s;
+                        &:hover{
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+  
