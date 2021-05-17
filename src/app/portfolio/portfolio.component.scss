@@ -27,6 +27,9 @@
             border-radius: 15px;
             overflow: hidden;
             transition: all 0.5s;
+            img{
+                height: 200px;
+            }
             &:hover{
                 height: 380px;
             }

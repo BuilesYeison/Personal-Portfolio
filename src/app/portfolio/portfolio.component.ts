@@ -12,41 +12,35 @@ export class PortfolioComponent implements OnInit {
   @Input()isDarkMode:boolean;
   projects:any = [
     {
-      img:"https://material.angular.io/assets/img/examples/shiba2.jpg",
-      description:"Some designs and web pages created following the DailyUI challenge. Projects in Angular and others technologies.",
-      github:"https://github.com/BuilesYeison",
-      deploy:""
+      img:"../assets/osloWebPage.PNG",
+      description:"Personal web landing page project, full responsive for any device. This web page is about a spanish Coffee shop called‘Oslo’.",
+      github:"https://github.com/BuilesYeison/Cafe-Oslo-Landing-Page",
+      deploy:"https://kind-payne-d9a1df.netlify.app"
     },
     {
-      img:"https://material.angular.io/assets/img/examples/shiba2.jpg",
-      description:"Some designs and web pages created following the DailyUI challenge. Projects in Angular and others technologies.",
-      github:"https://github.com/BuilesYeison",
-      deploy:""
+      img:"../assets/inksectWebPage.PNG",
+      description:"Personal web landing page project, full responsive for any device. This web page is about a tattoo studio called ‘InkSect’.",
+      github:"https://github.com/BuilesYeison/Inksect-Web-Landing-Page",
+      deploy:"https://adoring-booth-60e449.netlify.app"
     },
     {
-      img:"https://material.angular.io/assets/img/examples/shiba2.jpg",
-      description:"Some designs and web pages created following the DailyUI challenge. Projects in Angular and others technologies.",
-      github:"https://github.com/BuilesYeison",
-      deploy:""
+      img:"../assets/weatherWebPage.PNG",
+      description:"Angular project that can show weather data from any searched city, using openweathermap API for get JSON weather data.",
+      github:"https://github.com/BuilesYeison/WeatherApp",
+      deploy:"https://affectionate-euler-ade62d.netlify.app"
     },
     {
-      img:"https://material.angular.io/assets/img/examples/shiba2.jpg",
-      description:"Some designs and web pages created following the DailyUI challenge. Projects in Angular and others technologies.",
-      github:"https://github.com/BuilesYeison",
-      deploy:""
+      img:"../assets/dailyuiWebPage.PNG",
+      description:"Web Pages created following the DailyUI challenge to practice web frontend and UI/UX skills.",
+      github:"https://github.com/BuilesYeison/DailyUI",
+      deploy:"https://www.youtube.com/playlist?list=PL_soeKKkJIyNXGt9vs2UGbfqWdKGLEgnS"
     },
     {
-      img:"https://material.angular.io/assets/img/examples/shiba2.jpg",
-      description:"Some designs and web pages created following the DailyUI challenge. Projects in Angular and others technologies.",
-      github:"https://github.com/BuilesYeison",
-      deploy:""
-    },
-    {
-      img:"https://material.angular.io/assets/img/examples/shiba2.jpg",
-      description:"Some designs and web pages created following the DailyUI challenge. Projects in Angular and others technologies.",
-      github:"https://github.com/BuilesYeison",
-      deploy:""
-    },
+      img:"../assets/curriculumWebPage.PNG",
+      description:"An Angular project created for MVM, where the users can add info related with them work experiences.",
+      github:"https://github.com/BuilesYeison/Formato_Curriculum",
+      deploy:"https://www.youtube.com/watch?v=dJqfKnJzjQI"
+    }
   ]
   constructor(private darkmode:DarkmodeService) { }
 

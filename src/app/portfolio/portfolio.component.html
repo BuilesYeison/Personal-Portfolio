@@ -2,20 +2,20 @@
   <p [style.color]="textColor" class="title">Portfolio</p>
   <div class="grid">
     <mat-card *ngFor="let item of projects" class="example-card">
-      <img mat-card-image [src]="item.img"  alt="Photo of a Shiba Inu">
+      <img mat-card-image [src]="item.img" alt="Photo of a Shiba Inu">
       <div class="container">
         <mat-card-content>
             <p>
-                Some designs and web pages created following the DailyUI challenge. Projects in Angular and others technologies.
+                {{item.description}}
             </p>
           </mat-card-content>
           <mat-card-actions>
-            <button mat-icon-button color="primary" aria-label="Example icon button with a vertical three dot icon">
+            <a [href]="item.github" target="_blank" mat-icon-button color="primary" aria-label="Example icon button with a vertical three dot icon">
                 <mat-icon><i class='bx bxl-github'></i></mat-icon>
-            </button>
-            <button mat-icon-button color="primary" aria-label="Example icon button with a vertical three dot icon">
+            </a>
+            <a [href]="item.deploy" target="_blank" mat-icon-button color="primary" aria-label="Example icon button with a vertical three dot icon">
                 <mat-icon>play_arrow</mat-icon>
-            </button>
+            </a>
           </mat-card-actions>
       </div>
     </mat-card>
