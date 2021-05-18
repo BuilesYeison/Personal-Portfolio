@@ -1,14 +1,14 @@
 <footer id="contact" [style.backgroundColor]="backgroundColor">
-    <p class="title" [style.color]="textColor">Contact</p>
+    <p class="title" data-aos="fade-up" data-aos-duration="2000" [style.color]="textColor">Contact</p>
     <div class="container">
         <div class="img-container">
-            <img src="../assets/contact.svg" alt="">
+            <img data-aos="fade-right" data-aos-duration="2200" src="../assets/contact.svg" alt="">
         </div>
-        <div class="social-media">
-            <mat-card (click)="openWindow()" class="change-pos"><i class='bx bxl-github'></i> <span class="text">See all of my projects</span></mat-card>
-            <mat-card><i class='bx bxl-youtube' ></i><span class="text">I make video tutorials</span></mat-card>
-            <mat-card class="change-pos"><i class='bx bxl-twitter' ></i><span class="text">I am an idealist</span></mat-card>
-            <mat-card><i class='bx bxl-linkedin-square' ></i><span class="text">Work experiences and more</span></mat-card>
+        <div data-aos="fade-left" data-aos-duration="2200" class="social-media">
+            <mat-card (click)="openWindow('github')" class="change-pos"><i class='bx bxl-github'></i> <span class="text">See all of my projects</span></mat-card>
+            <mat-card (click)="openWindow('youtube')"><i class='bx bxl-youtube' ></i><span class="text">I make video tutorials</span></mat-card>
+            <mat-card (click)="openWindow('twitter')" class="change-pos"><i class='bx bxl-twitter' ></i><span class="text">I am an idealist</span></mat-card>
+            <mat-card (click)="openWindow('linkedin')"><i class='bx bxl-linkedin-square' ></i><span class="text">Work experiences and more</span></mat-card>
         </div>
     </div>
 </footer>
