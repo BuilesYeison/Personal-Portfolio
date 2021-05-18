@@ -11,7 +11,7 @@ export class NavComponent implements OnInit {
   backgroundColor:string;
   @Input() isDarkMode:boolean; //get the mode selected from app component
   constructor(private darkMode:DarkmodeService) {}
-  navigate(element:string):void{
+  navigate(element:string):void{//obtiene la seccion y scrollea hacia el
     switch(element){
       case 'header':
         document.getElementById(element)?.scrollIntoView({behavior:"smooth"});

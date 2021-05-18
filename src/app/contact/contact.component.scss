@@ -1,0 +1,69 @@
+@import '../variables';
+footer{
+    width: 100%;
+    height: 100vh;
+    transition: all 0.5s;
+    @extend %flexCenter;
+    flex-direction: column;
+    .title{
+        @extend %title;
+        text-align: center;
+    }
+    
+    .container{
+        margin-top: 100px;
+        width: 80%;
+        @extend %flexCenter;
+        justify-content: space-between;
+        .img-container{
+            width: 45%;
+        }
+        .social-media{
+            display: grid;
+            grid-row-gap: 15px;
+            width: 45%;
+            position: relative;
+            mat-card{
+                background-color: $primaryColor;
+                color: $lightenColor;
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.3) ;
+                cursor: pointer;
+                @extend %flexCenter;
+                justify-content: flex-start;
+                transition: all 0.5s;
+                i{
+                    font-size: 28px;
+                    margin-right: 15px;
+                }
+                .text{
+                    font-size: 24px;
+                }
+                &:hover{
+                    background-color: #2248a8;
+                }
+            }
+            .change-pos{
+                transform: translateX(-10%);
+            }
+        }
+    }
+}
+@media screen and (max-width:940px) {
+    footer{
+        .container{
+            margin-top: 50px;
+            .img-container{
+                display: none;
+            }
+            .social-media{
+                width: 100%;
+                mat-card{
+                    box-shadow: 0px 5px 10px rgba(0,0,0,0.3) ;
+                }
+                .change-pos{
+                    transform: translateX(0%);
+                }
+            }
+        }
+    }
+}
