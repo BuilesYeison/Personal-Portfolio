@@ -11,7 +11,9 @@ export class AboutComponent implements OnInit {
   backgroundColor:string;
   @Input()isDarkMode:boolean;
   constructor(private darkmode:DarkmodeService) { }
-
+  openCrr(){
+    window.open("../assets/CriclmYB.pdf")
+  }
   ngOnInit(): void {
   }
   ngOnChanges():void{
