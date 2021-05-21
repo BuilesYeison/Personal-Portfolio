@@ -1,8 +1,9 @@
 @import '../variables';
 footer{
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
     transition: all 0.5s;
+    overflow: hidden;
     @extend %flexCenter;
     flex-direction: column;
     .title{
