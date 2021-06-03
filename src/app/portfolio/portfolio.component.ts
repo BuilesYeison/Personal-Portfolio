@@ -12,10 +12,10 @@ export class PortfolioComponent implements OnInit {
   @Input()isDarkMode:boolean;
   projects:any = [
     {
-      img:"../assets/osloWebPage.PNG",
-      description:"Personal web landing page project, full responsive for any device. This web page is about a spanish Coffee shop called‘Oslo’.",
-      github:"https://github.com/BuilesYeison/Cafe-Oslo-Landing-Page",
-      deploy:"https://kind-payne-d9a1df.netlify.app"
+      img:"../assets/covidWebPage.PNG",
+      description:"An Angular project that shows the actual covid data about any country typed in the searchbox.",
+      github:"https://github.com/BuilesYeison/WebSite-Covid-Data",
+      deploy:"https://adoring-kowalevski-bbc98f.netlify.app/"
     },
     {
       img:"../assets/inksectWebPage.PNG",
@@ -40,7 +40,14 @@ export class PortfolioComponent implements OnInit {
       description:"An Angular project created for MVM, where the users can add info related with them work experiences.",
       github:"https://github.com/BuilesYeison/Formato_Curriculum",
       deploy:"https://www.youtube.com/watch?v=dJqfKnJzjQI"
+    },
+    {
+      img:"../assets/osloWebPage.PNG",
+      description:"Personal web landing page project, full responsive for any device. This web page is about a spanish Coffee shop called‘Oslo’.",
+      github:"https://github.com/BuilesYeison/Cafe-Oslo-Landing-Page",
+      deploy:"https://kind-payne-d9a1df.netlify.app"
     }
+
   ]
   constructor(private darkmode:DarkmodeService) { }
 
