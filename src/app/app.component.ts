@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSlideToggleChange } from '@angular/material/slide-toggle';
-import {DarkmodeService} from './darkmode.service'
+import {DarkmodeService} from './services/darkmode.service'
 import * as Aos from 'aos';
 
 @Component({
@@ -15,7 +15,7 @@ export class AppComponent {
   backgroundColor:string;
   modeSelected:string = "Dark mode" //will show in toggle html element text
   constructor(private darkMode:DarkmodeService){}
-  
+
   getToggle(evt:MatSlideToggleChange){ //get the toggle boolean value. Change the modeSelected text
     this.isDarkMode = evt.checked;
     const styles = this.darkMode.getMode(this.isDarkMode);

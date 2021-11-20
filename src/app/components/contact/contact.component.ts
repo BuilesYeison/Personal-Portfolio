@@ -1,5 +1,5 @@
 import { Component, OnInit,Input, OnChanges } from '@angular/core';
-import {DarkmodeService} from '../darkmode.service'
+import {DarkmodeService} from '../../services/darkmode.service'
 
 @Component({
   selector: 'app-contact',
