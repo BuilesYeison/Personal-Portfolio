@@ -1,7 +1,7 @@
 <section [style.backgroundColor]="backgroundColor" id="portfolio">
   <p [style.color]="textColor" data-aos="fade-up" data-aos-duration="800" class="title">Portfolio</p>
   <div class="grid">
-    <mat-card *ngFor="let item of projects" data-aos="flip-up" data-aos-duration="2800" class="project-card">
+    <mat-card *ngFor="let item of projects" data-aos="flip-up" data-aos-duration="800" class="project-card">
       <i [ngClass]="item.icon" class='bx card-icon'></i>
       <div class="container">
         <mat-card-title>{{item.title}}</mat-card-title>
