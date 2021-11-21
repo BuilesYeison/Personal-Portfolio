@@ -22,4 +22,9 @@ describe('PortfolioComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have data', ()=>{
+    let projects = component.projects;
+    expect(Object.keys(projects).length).toBeGreaterThan(0);
+  })
 });
