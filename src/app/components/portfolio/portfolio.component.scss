@@ -18,30 +18,40 @@
         grid-gap: 1em;
         grid-row-gap: 5em;
         padding: 25px 0;
-        .example-card {
+        .project-card {
             justify-self: center;
-            max-width: 250px;
-            height: 200px;
+            max-width: 320px;
+            height: 13.125rem;
             box-shadow: 0 5px 20px rgba(0,0,0,0.5);
             background-color: rgb(235, 235, 235);
             border-radius: 15px;
             overflow: hidden;
-            transition: all 0.5s;
-            img{
-                height: 200px;
-            }
+            transition: all 0.1s;
+            position: relative;
             &:hover{
-                height: 380px;
+              transform: scale(1.1);
+            }
+            .card-icon{
+              font-size: 2.25rem;
+              color: $primaryColor;
+              position: absolute;
+              top: .625rem;
+              right: .625rem;
             }
             .container{
-                mat-card-actions{
-                    button{
-                        transition: all 0.2s;
-                        &:hover{
-                            transform: scale(1.2);
-                        }
-                    }
+              padding: .9375rem 0;
+              mat-card-actions{
+                position: absolute;
+                bottom: 1.25rem;
+                margin: 0;
+                .main-button{
+                  color:$lightenColor;
+                  background-color: $primaryColor;
                 }
+                .secondary-button{
+                  color: $primaryColor;
+                }
+              }
             }
         }
     }

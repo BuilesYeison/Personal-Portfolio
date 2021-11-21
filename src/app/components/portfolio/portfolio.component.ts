@@ -12,40 +12,46 @@ export class PortfolioComponent implements OnInit {
   @Input()isDarkMode:boolean;
   projects:any = [
     {
-      img:"../assets/covidWebPage.PNG",
+      title:"Covid Web App",
+      icon:"bx-first-aid",
       description:"An Angular project that shows the actual covid data about any country typed in the searchbox.",
-      github:"https://github.com/BuilesYeison/WebSite-Covid-Data",
-      deploy:"https://adoring-kowalevski-bbc98f.netlify.app/"
+      repository:"https://github.com/BuilesYeison/WebSite-Covid-Data",
+      projectUrl:"https://adoring-kowalevski-bbc98f.netlify.app/"
     },
     {
-      img:"../assets/inksectWebPage.PNG",
+      title:"Inksect Tattoo Studio",
+      icon:"bx-palette",
       description:"Personal web landing page project, full responsive for any device. This web page is about a tattoo studio called ‘InkSect’.",
-      github:"https://github.com/BuilesYeison/Inksect-Web-Landing-Page",
-      deploy:"https://adoring-booth-60e449.netlify.app"
+      repository:"https://github.com/BuilesYeison/Inksect-Web-Landing-Page",
+      projectUrl:"https://adoring-booth-60e449.netlify.app"
     },
     {
-      img:"../assets/weatherWebPage.PNG",
+      title:"Weather Web App",
+      icon:"bx-cloud",
       description:"Angular project that can show weather data from any searched city, using openweathermap API for get JSON weather data.",
-      github:"https://github.com/BuilesYeison/WeatherApp",
-      deploy:"https://affectionate-euler-ade62d.netlify.app"
+      repository:"https://github.com/BuilesYeison/WeatherApp",
+      projectUrl:"https://affectionate-euler-ade62d.netlify.app"
     },
     {
-      img:"../assets/dailyuiWebPage.PNG",
+      title:"DailyUi Challenge",
+      icon:"bx-vector",
       description:"Web Pages created following the DailyUI challenge to practice web frontend and UI/UX skills.",
-      github:"https://github.com/BuilesYeison/DailyUI",
-      deploy:"https://www.youtube.com/playlist?list=PL_soeKKkJIyNXGt9vs2UGbfqWdKGLEgnS"
+      repository:"https://github.com/BuilesYeison/DailyUI",
+      projectUrl:"https://www.youtube.com/playlist?list=PL_soeKKkJIyNXGt9vs2UGbfqWdKGLEgnS"
     },
     {
-      img:"../assets/curriculumWebPage.PNG",
+      title:"Forms",
+      icon:"bx-chart",
       description:"An Angular project created for MVM, where the users can add info related with them work experiences.",
-      github:"https://github.com/BuilesYeison/Formato_Curriculum",
-      deploy:"https://www.youtube.com/watch?v=dJqfKnJzjQI"
+      repository:"https://github.com/BuilesYeison/Formato_Curriculum",
+      projectUrl:"https://www.youtube.com/watch?v=dJqfKnJzjQI"
     },
     {
-      img:"../assets/osloWebPage.PNG",
-      description:"Personal web landing page project, full responsive for any device. This web page is about a spanish Coffee shop called‘Oslo’.",
-      github:"https://github.com/BuilesYeison/Cafe-Oslo-Landing-Page",
-      deploy:"https://kind-payne-d9a1df.netlify.app"
+      title:"Coffee Shop",
+      icon:"bx-dish",
+      description:"Personal web landing page project, full responsive for any device. This web page is about a spanish Coffee shop called ‘Oslo’.",
+      repository:"https://github.com/BuilesYeison/Cafe-Oslo-Landing-Page",
+      projectUrl:"https://kind-payne-d9a1df.netlify.app"
     }
 
   ]
