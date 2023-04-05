@@ -12,7 +12,7 @@ export class AboutComponent implements OnInit {
   @Input()isDarkMode:boolean;
   constructor(private darkmode:DarkmodeService) { }
   openCrr(){
-    window.open("../assets/CriclmYB.pdf")
+    window.open("../assets/Yeison Builes Uribe Curriculum.pdf")
   }
   ngOnInit(): void {
   }
